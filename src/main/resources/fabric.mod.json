@@ -15,7 +15,7 @@
     ]
   },
   "mixins": [
-    "villages.mixins.json"
+    "structurized.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.8.2+build.194",

@@ -8,10 +8,6 @@ public class Structurized implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        StructurePoolAddCallback.EVENT.register(structurePool -> {
-            if(structurePool.getUnderlying().getId().toString().equals("minecraft:village/plains/houses")) {
-                structurePool.addStructurePoolElement(new SinglePoolElement("village/desert/houses/desert_small_house_1"), 50);
-            }
-        });
+
     }
 }
