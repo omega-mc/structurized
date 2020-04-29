@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "draylar.structurized.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "StructurePoolAccessor",
+    "StructurePoolRegistryMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
