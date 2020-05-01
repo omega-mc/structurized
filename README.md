@@ -15,7 +15,7 @@ repositories {
 ```
 ```groovy
 dependencies {
-	implementation 'com.github.Draylar:structurized:master-SNAPSHOT'
+	modImplementation 'com.github.Draylar:structurized:master-SNAPSHOT'
 }
 ```
 
