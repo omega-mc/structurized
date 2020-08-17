@@ -9,17 +9,12 @@
   "license": "MIT",
   "icon": "assets/villages/icon.png",
   "environment": "*",
-  "entrypoints": {
-    "main": [
-      "draylar.structurized.Structurized"
-    ]
-  },
   "mixins": [
     "structurized.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.8.2+build.194",
     "fabric": "*",
-    "minecraft": "1.15.2"
+    "minecraft": ">=1.16"
   }
 }

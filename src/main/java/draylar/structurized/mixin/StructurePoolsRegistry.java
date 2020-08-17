@@ -3,17 +3,18 @@ package draylar.structurized.mixin;
 import draylar.structurized.api.FabricStructurePool;
 import draylar.structurized.api.StructurePoolAddCallback;
 import net.minecraft.structure.pool.StructurePool;
-import net.minecraft.structure.pool.StructurePoolRegistry;
+import net.minecraft.structure.pool.StructurePools;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(StructurePoolRegistry.class)
-public class StructurePoolRegistryMixin {
+@Mixin(StructurePools.class)
+public class StructurePoolsRegistry {
 
-    @Inject(method = "add", at = @At("HEAD"))
-    private void injectAdd(StructurePool pool, CallbackInfo ci) {
+    @Inject(method = "register", at = @At("HEAD"))
+    private static void injectAdd(StructurePool pool, CallbackInfoReturnable<StructurePool> cir) {
         StructurePoolAddCallback.EVENT.invoker().add(new FabricStructurePool(pool));
     }
 }
