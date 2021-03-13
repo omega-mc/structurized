@@ -4,17 +4,16 @@
   "version": "${version}",
   "name": "Structurized",
   "authors": [
-    "Draylar"
+    "Draylar",
+    "Frqnny"
   ],
   "license": "MIT",
   "icon": "assets/villages/icon.png",
-  "environment": "*",
   "mixins": [
     "structurized.mixins.json"
   ],
+  "accessWidener": "structurized.accesswidener",
   "depends": {
-    "fabricloader": ">=0.8.2+build.194",
-    "fabric": "*",
-    "minecraft": ">=1.16"
+    "minecraft": "1.16.x"
   }
 }
