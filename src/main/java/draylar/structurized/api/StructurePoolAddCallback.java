@@ -8,10 +8,10 @@ public interface StructurePoolAddCallback {
     Event<StructurePoolAddCallback> EVENT = EventFactory.createArrayBacked(StructurePoolAddCallback.class,
             listeners -> initialPool -> {
                 for (StructurePoolAddCallback listener : listeners) {
-                    listener.add(initialPool);
+                    listener.onAdd(initialPool);
                 }
             }
     );
 
-    void add(FabricStructurePool initialPool);
+    void onAdd(FabricStructurePool initialPool);
 }

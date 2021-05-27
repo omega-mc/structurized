@@ -4,8 +4,7 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "DynamicRegistryManagerMixin",
-    "StructurePoolAccessor",
-    "SimpleRegistryAccessor"
+    "StructurePoolAccessor"
   ],
   "injectors": {
     "defaultRequire": 1
