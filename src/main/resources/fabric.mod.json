@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "structurized",
-  "version": "1.3.0",
+  "version": "1.4.0+1.18",
   "name": "Structurized",
   "authors": [
     "Draylar",
@@ -13,6 +13,6 @@
   ],
   "accessWidener": "structurized.accesswidener",
   "depends": {
-    "minecraft": "1.17.x"
+    "minecraft": "1.18.x"
   }
 }
